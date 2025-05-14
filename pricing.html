@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans - EnnieDevelopers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <!-- Preloader bar -->
+    <div id="preloader">
+  <div class="loader-container">
+    <div class="loader-bar"></div>
+  </div>
+</div>
+    <div id="scrollTopDiv" onclick="scrollToTop()" title="Scroll to top">↑</div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+  <div id="hero" class="hero" style="  background-image: url('/images/tech/mobile.jpg');
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;">
+    <h2 style="
+    color: honeydew; 
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    "> Pricing Plans</h2>
+    <h3
+    style="
+    color: rgba(240, 255, 240, 0.66); 
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;"
+    >                <p>Transparent pricing options for your web development needs</p>
+</h3>
+  </div>
+
+    <!-- Pricing Section -->
+    <section id="pricing-section" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Plan</h2>
+                <p>Select the package that best fits your business requirements</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span class="toggle-label">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">Yearly</span>
+                <span class="discount-badge">Save 20%</span>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <div class="pricing-price">
+                            <div class="price monthly">
+                                <span class="currency">$</span>
+                                <span class="amount">220</span>
+                            </div>
+                            <div class="price yearly">
+                                <span class="currency">$</span>
+                                <span class="amount">300</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <p class="pricing-description">Perfect for small businesses and personal websites</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="feature-included"><i class="fas fa-check"></i> Responsive design</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Up to 5 pages</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Contact form</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Basic SEO setup</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Social media integration</li>
+                            <li class="feature-excluded"><i class="fas fa-times"></i> Content management system</li>
+                            <li class="feature-excluded"><i class="fas fa-times"></i> E-commerce functionality</li>
+                            <li class="feature-excluded"><i class="fas fa-times"></i> Custom functionalities</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="paypal.html" class="btn btn-outline btn-block">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Professional Plan -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="pricing-price">
+                            <div class="price monthly">
+                                <span class="currency">$</span>
+                                <span class="amount">400</span>
+                            </div>
+                            <div class="price yearly">
+                                <span class="currency">$</span>
+                                <span class="amount">550</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <p class="pricing-description">Ideal for growing businesses and organizations</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="feature-included"><i class="fas fa-check"></i> Responsive design</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Up to 10 pages</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Advanced contact forms</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Comprehensive SEO setup</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Social media integration</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Content management system</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Basic e-commerce (up to 50 products)</li>
+                            <li class="feature-excluded"><i class="fas fa-times"></i> Custom functionalities</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="paypal.html" class="btn btn-outline btn-block">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="pricing-price">
+                            <div class="price monthly">
+                                <span class="currency">$</span>
+                                <span class="amount">700</span>
+                            </div>
+                            <div class="price yearly">
+                                <span class="currency">$</span>
+                                <span class="amount">1000</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <p class="pricing-description">Advanced solution for large businesses and e-commerce</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="feature-included"><i class="fas fa-check"></i> Responsive design</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Unlimited pages</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Advanced forms with logic</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Advanced SEO optimization</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Social media integration</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Advanced CMS with user roles</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Full e-commerce functionality</li>
+                            <li class="feature-included"><i class="fas fa-check"></i> Custom functionalities</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="paypal.html" class="btn btn-outline btn-block">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section id="additional-services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Additional Services</h2>
+                <p>Custom services that can be added to any plan</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>Content Creation</h3>
+                        <p>Professional copywriting for your website pages, blog posts, and product descriptions.</p>
+                        <div class="service-price">Starting at $55</div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>Professional Photography</h3>
+                        <p>High-quality photography sessions to showcase your products, team, or facilities.</p>
+                        <div class="service-price">Starting at $60</div>
+                    </div>
+                </div>
+                
+            
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>Logo & Branding</h3>
+                        <p>Professional logo design and comprehensive brand identity packages.</p>
+                        <div class="service-price">Starting at $30</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>Web Hosting</h3>
+                        <p>We got your website safe and hosted immediately after development</p>
+                        <div class="service-price">Starting at $99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="pricing-faq" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common questions about our pricing plans</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's included in the website setup fee?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The website setup fee includes the initial design and development of your website based on the plan you choose. This covers responsive design, basic SEO optimization, integration with your social media accounts, and all the features listed in your selected plan.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need to pay for website hosting separately?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Website hosting is not included in the base pricing plans, but we offer reliable hosting packages starting at $99/month that include regular backups, security monitoring, and technical support. You can also choose to host your website with another provider if you prefer.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I upgrade my plan in the future?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can upgrade your plan at any time as your business grows and your needs change. We'll calculate the upgrade cost based on the work required to add the new features and functionality to your existing website.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to complete a website?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The timeline varies depending on the complexity of your website and the plan you choose. Generally, a Basic website takes 2-4 weeks, a Professional website takes 4-6 weeks, and an Enterprise website takes 8-12 weeks. We'll provide a more specific timeline during our initial consultation based on your specific requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer payment plans?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer flexible payment plans for all our services. Typically, we require a 20% deposit to begin work, with the remaining balance due upon project completion and your satisifaction. For larger projects, we can arrange milestone-based payments. Please contact us to discuss payment options that work for you.</p>
+                        <p>You can also click <a href="">here</a> to do your payment.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I need a feature not listed in any plan?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer custom development services for any specific functionality you might need. During our consultation, we'll discuss your unique requirements and provide a custom quote for any additional features not included in our standard plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section id="guarantee" class="section-padding bg-light">
+        <div class="container">
+            <div class="guarantee-content">
+                <div class="guarantee-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="guarantee-info">
+                    <h2>Our Satisfaction Guarantee</h2>
+                    <p>We're confident you'll love your new website. If you're not completely satisfied with the final result, we'll revise it until you are. We offer unlimited revisions during the development phase and a 30-day post-launch support period to ensure everything works perfectly.</p>
+                    <a href="contact.html#contact-form" class="btn btn-primary">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a custom solution?</h2>
+                <p>Contact us for a personalized quote tailored to your specific needs</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Button -->
+    <div class="chat-widget" id="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-popup" id="chat-popup">
+            <!-- Chat widget content will be loaded dynamically via JavaScript -->
+        </div>
+    </div>
+
+   <!-- Footer Section -->
+   <footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+                <p>Professional web design and development solutions for businesses of all sizes.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#seo">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind Post Office, Blantyre, Malawi</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:++265886515165"> (+265) 88 651 5165</a></li>
+                        <li><i class="fas fa-envelope"></i> enniedevelopers@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                    <a href="Terms & pirvancy.html">Privacy Policy</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- CSS for Pricing page -->
+    <style>
+        /* Pricing toggle */
+        .pricing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .toggle-label {
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--border-color);
+            transition: var(--transition-normal);
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: var(--transition-normal);
+        }
+        
+        input:checked + .slider {
+            background-color: var(--primary-color);
+        }
+        
+        input:focus + .slider {
+            box-shadow: 0 0 1px var(--primary-color);
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        
+        .slider.round {
+            border-radius: 24px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        
+        .discount-badge {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2px 8px;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        /* Pricing grid */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .pricing-card {
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            transition: transform var(--transition-normal);
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .pricing-card.featured {
+            transform: scale(1.05);
+            border: 2px solid var(--primary-color);
+            z-index: 2;
+        }
+        
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border-bottom-left-radius: var(--border-radius-md);
+        }
+        
+        .pricing-header {
+            padding: var(--spacing-lg);
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .pricing-price {
+            margin: var(--spacing-md) 0;
+        }
+        
+        .price {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+        
+        .price.yearly {
+            display: none;
+        }
+        
+        .billing-yearly .price.yearly {
+            display: flex;
+        }
+        
+        .billing-yearly .price.monthly {
+            display: none;
+        }
+        
+        .currency {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-right: 5px;
+        }
+        
+        .amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+        
+        .period {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-left: 5px;
+        }
+        
+        .pricing-description {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .pricing-features {
+            padding: var(--spacing-lg);
+        }
+        
+        .pricing-features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .pricing-features li {
+            margin-bottom: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+        }
+        
+        .pricing-features li i {
+            margin-right: 10px;
+            width: 16px;
+            text-align: center;
+        }
+        
+        .feature-included {
+            color: var(--text-color);
+        }
+        
+        .feature-included i {
+            color: var(--success-color);
+        }
+        
+        .feature-excluded {
+            color: var(--text-light);
+            text-decoration: line-through;
+        }
+        
+        .feature-excluded i {
+            color: var(--text-light);
+        }
+        
+        .pricing-footer {
+            padding: 0 var(--spacing-lg) var(--spacing-lg);
+        }
+        
+        .btn-block {
+            width: 100%;
+        }
+        
+        /* Additional services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: var(--border-radius-md);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+            transition: transform var(--transition-fast);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        
+        .service-details {
+            flex: 1;
+        }
+        
+        .service-details h3 {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .service-details p {
+            color: var(--text-light);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .service-price {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        /* Guarantee section */
+        .guarantee-content {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .guarantee-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            flex-shrink: 0;
+        }
+        
+        .guarantee-info h2 {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .guarantee-info p {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        @media (max-width: 767.98px) {
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+            
+            .pricing-card.featured:hover {
+                transform: translateY(-10px);
+            }
+            
+            .guarantee-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .service-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/faq.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Billing toggle
+            const billingToggle = document.getElementById('billing-toggle');
+            const body = document.body;
+            
+            if (billingToggle) {
+                billingToggle.addEventListener('change', function() {
+                    if (this.checked) {
+                        body.classList.add('billing-yearly');
+                    } else {
+                        body.classList.remove('billing-yearly');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

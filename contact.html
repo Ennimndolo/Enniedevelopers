@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - EnnieDevelopers</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+        
+    </style>
+  </head>
+  <body>
+    <!-- Preloader bar -->
+    <div id="preloader">
+      <div class="loader-container">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+    <!-- Scroll up button -->
+    <div id="scrollTopDiv" onclick="scrollToTop()" title="Scroll to top">↑</div>
+
+    <!-- Header Section -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-text">EnnieDevelopers</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li class="auth-buttons">
+             
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <div
+      id="hero"
+      class="hero"
+      style="
+        background-image: url('/images/tech/mobile.jpg');
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <h2
+        style="
+          color: honeydew;
+          text-transform: uppercase;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+        "
+      >
+        Welcome to EnnieDevelopers
+      </h2>
+      <h3
+        style="
+          color: rgba(240, 255, 240, 0.66);
+          text-transform: uppercase;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+        "
+      >
+        CONTACT US NOW
+      </h3>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Meet the EnnieDevelopers CEO</h2>
+            <p style="text-align: justify;">
+              Enson Mndolo is a highly skilled professional with a strong
+              academic background in both Technical Education Technology and
+              Information and Communication Technology (ICT). He holds a
+              Bachelor's degree in Technical Education Technology from Malawi University of Business and Applied Sciences <a href="https://mubas.ac.mw/">(MUBAS)</a> and
+              a Diploma in Information and Communication from SOS Vocational
+              Training Center. 
+              </p>
+              <p style="text-align: justify;">
+              Enson combines his educational and practical
+              expertise to approach technology solutions across various sectors.
+              He is passionate about applying technology in fields such as
+              education, business, churches, and organizations. His goal is to
+              help individuals and institutions leverage modern technology to
+              improve efficiency, drive innovation, and achieve their
+              objectives. Whether enhancing communication, optimizing processes,
+              or contributing to growth, Enson consistently makes a positive
+              impact in every environment he engages with.
+            </p>
+            <p style="text-align: justify">
+              With over 5 years of experience in the industry, Enson and his team combines
+              technical expertise with creative design to deliver websites that
+              not only look stunning but also perform exceptionally well.
+            </p>
+            <div class="stats-container">
+              <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img class="about-photo" src="images/tech/enn.jpg" alt="Our Team" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact-info" class="section-padding">
+      <div class="container" id="container-location">
+        <div class="contact-info-cards">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Our Office</h3>
+            <p>
+              Ndirande Market<br />Behind Post Office, Blantyre, <br />Malawi
+            </p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Phone Number</h3>
+            <p><br />(+265) (886) 515- 165</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Address</h3>
+            <p>
+              <a href="mailto:enniedevelopers@gmail.com"></a
+              ><br />enniedevelopers@gmail.com
+            </p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Working Hours</h3>
+            <p>Monday - Saturday : 07AM - 5PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="section-padding bg-light">
+      <div class="container">
+        <div class="section-header" style="color: white">
+          <h2 style="color: white">Send Us a Message</h2>
+          <p style="color: white">
+            Fill out the form below and we'll get back to you as soon as
+            possible.
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div class="form-container" id="form-container">
+            <!-- Status Messages -->
+            <div
+              id="contact-success"
+              class="alert-success"
+              style="display: none"
+            ></div>
+            <div
+              id="contact-error"
+              class="alert-error"
+              style="display: none"
+            ></div>
+
+            <form
+              id="contact-form"
+              action="php/contact.php"
+              method="POST"
+              class="form"
+            >
+              <input type="hidden" name="action" value="contact" />
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your Name"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Email"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone Number"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Type Your Message here"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" id="sub">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="poster">
+            <img src="/images/tech/teamm.jpg" alt="" />
+          </div>
+          <div class="map-container">
+            <div class="map" id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15100.000000000000!2d35.03764!3d-15.77706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1921c440d1d6ad99%3A0x6d8ec94aa01701ce!2sNdirande%20Market!5e0!3m2!1sen!2smw!4v1714724950000!5m2!1sen!2smw"
+                width="100%"
+                height="500px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="section-padding">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Need a custom solution?</h2>
+          <p>Schedule a free 30-minute consultation call with our experts</p>
+          <a href="#" class="btn btn-primary btn-lg">Book a Call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Chat Button -->
+    <div class="chat-widget" id="chat-widget">
+      <button id="chat-toggle" class="chat-toggle">
+        <i class="fas fa-comments"></i>
+      </button>
+      <div class="chat-popup" id="chat-popup">
+        <!-- Chat widget content will be loaded dynamically via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html">
+              <span class="logo-text">EnnieDevelopers</span>
+            </a>
+            <p>
+              Professional web design and development solutions for businesses
+              of all sizes.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="services.html#web-design">Web Design</a></li>
+                <li>
+                  <a href="services.html#web-development">Web Development</a>
+                </li>
+                <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                <li><a href="services.html#seo">SEO Services</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Contact Us</h3>
+              <ul class="contact-info">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind
+                  Post Office, Blantyre, Malawi
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i
+                  ><a href="tel:++265886515165"> (+265) 88 651 5165</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i> enniedevelopers@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+          <div class="footer-bottom-links">
+                    <a href="Terms & pirvancy.html">Privacy Policy</a>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>

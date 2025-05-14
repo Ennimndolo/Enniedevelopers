@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnnieDevelopers - Professional Web Design & Development</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <style>
+      
+#container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  position: relative;  /* NEW */
+  z-index: 1;          /* NEW */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background-color: #111;
+  z-index: 0; /* Put behind everything */
+}
+
+.site-footer {
+  position: relative;
+  width: 100%;
+  background-color: #111;
+  color: white;
+ 
+  padding: 20px 10px;
+  z-index: 2; /* Ensure it's above sidebar */
+}
+
+.logo-sidebar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-sidebar a {
+  color: wheat;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.main-nav .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav .nav-links li {
+  margin: 10px 0;
+}
+
+.main-nav .nav-links a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.main-nav .nav-links a:hover,
+.main-nav .nav-links .active {
+  background-color: #333;
+}
+
+
+.container-p {
+  margin-left: 240px; /* leave room for sidebar */
+  padding: 20px;
+  padding-bottom: 100px; /* make room for footer */
+}
+  </style>
+</head>
+<body> 
+  <div id="container">
+    <!-- Preloader bar -->
+    <div id="preloader">
+  <div class="loader-container">
+    <div class="loader-bar"></div>
+  </div>
+</div>
+
+<!-- Scroll up button -->
+        <div id="scrollTopDiv" onclick="scrollToTop()" title="Scroll to top">↑</div>
+ <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <!-- <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+            </div> -->
+           <div class="sidebar">
+  <div class="logo-sidebar">
+    <a href="index.html"><span class="logo-text">EnnieDevelopers</span></a>
+  </div>
+  <nav class="main-nav" id="nav">
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+        </div>
+    </header>
+  <div class="container-p">
+    <h1>Terms of Service</h1>
+    <p><strong>Effective Date:</strong> [14-05-2025]</p>
+    <p>Welcome to [<a href="index.html">EnnieDevelopers</a>]. By accessing or using this website, you agree to be bound by the following Terms of Service. Please read them carefully.</p>
+
+    <h2>1. Use of the Website</h2>
+    <p>You agree to use this website only for lawful purposes and in a way that does not infringe on the rights of others or restrict their use of the site.</p>
+
+    <h2>2. Intellectual Property</h2>
+    <p>All content, including logos, text, graphics, images, and software, is the property of [EnnieDevelopers] and is protected by copyright laws. Unauthorized use is prohibited.</p>
+
+    <h2>3. User Accounts</h2>
+    <p>If this website allows account creation, you are responsible for keeping your login credentials secure.</p>
+
+    <h2>4. Prohibited Activities</h2>
+    <ul>
+      <li>Disrupt or interfere with the website or servers</li>
+      <li>Attempt to gain unauthorized access</li>
+      <li>Use the site for spam, fraud, or illegal activities</li>
+    </ul>
+
+    <h2>5. Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to the site at our discretion.</p>
+
+    <h2>6. Disclaimer</h2>
+    <p>This website is provided "as is" without warranties of any kind. We do not guarantee uninterrupted or error-free access.</p>
+
+    <h2>7. Limitation of Liability</h2>
+    <p>We are not liable for any indirect or consequential loss or damage arising from the use of this website.</p>
+
+    <h2>8. Changes to Terms</h2>
+    <p>We may update these Terms at any time. Continued use of the site indicates your acceptance.</p>
+
+    <hr>
+
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> [14-05-2025]</p>
+    <p>We respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information.</p>
+
+    <h2>1. Information We Collect</h2>
+    <ul>
+      <li>Name, email address, and contact details</li>
+      <li>Browser and device information</li>
+      <li>Usage data through cookies</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>To provide and improve our services, communicate with users, and ensure security.</p>
+
+    <h2>3. Sharing of Information</h2>
+    <p>We do not sell your information. We may share it with trusted service providers under confidentiality agreements.</p>
+
+    <h2>4. Cookies</h2>
+    <p>This site uses cookies for better user experience and analytics.</p>
+
+    <h2>5. Data Security</h2>
+    <p>We implement reasonable security measures to protect your personal data.</p>
+
+    <h2>6. Your Rights</h2>
+    <p>You may access, correct, or delete your data and withdraw consent at any time.</p>
+
+    <h2>7. Changes to this Policy</h2>
+    <p>This Privacy Policy may be updated occasionally. Changes will be posted here.</p>
+
+    <h2><a href="contact.html">Contact Us through</a></h2>
+    <p>Email: [<a href="mailto:enniedevelopers@gmail.com">enniedevelopers@gmail.com</a>]<br>
+    Phone: [<a href="tel:+265886515165">+265 886 515 165</a>]<br>
+    Address: [ Ndirande Market, Behind Post Office, Blantyre, Malawi]</p>
+    <p>View us on <a href="contact.html#map">map</a></p>
+  </div>
+  </div>
+   <!-- Footer Section -->
+    <footer id="footer" class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">EnnieDevelopers</span>
+                    </a>
+                    <p>Professional web design and development solutions for businesses of all sizes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="services.html#web-design">Web Design</a></li>
+                            <li><a href="services.html#web-development">Web Development</a></li>
+                            <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                            <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                            <li><a href="services.html#seo">SEO Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind Post Office, Blantyre, Malawi</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:++265886515165"> (+265) 88 651 5165</a></li>
+                            <li><i class="fas fa-envelope"></i> enniedevelopers@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="Terms & pirvancy.html">Privacy Policy</a>
+                 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/chat.js"></script>
+</html>

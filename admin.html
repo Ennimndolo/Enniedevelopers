@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EnnieDevelopers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+         #auth-section {
+                min-height: calc(100vh - 300px);
+                display: flex;
+                align-items: center;
+                padding-top: 100px;
+            }
+            
+            .auth-container {
+                display: flex;
+                background-color: white;
+                border-radius: var(--border-radius-lg);
+                box-shadow: var(--shadow-lg);
+                overflow: hidden;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            
+            .auth-form-container {
+                flex: 1;
+                padding: var(--spacing-lg);
+            }
+            
+            .auth-info {
+                flex: 1;
+                background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+                color: white;
+                padding: var(--spacing-lg);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .auth-tabs {
+                display: flex;
+                margin-bottom: var(--spacing-lg);
+                border-bottom: 1px solid var(--border-color);
+            }
+            
+            .auth-tab {
+                background: none;
+                border: none;
+                padding: var(--spacing-md) var(--spacing-lg);
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--text-light);
+                cursor: pointer;
+                position: relative;
+                transition: color var(--transition-fast);
+            }
+            
+            .auth-tab:hover {
+                color: var(--primary-color);
+            }
+            
+            .auth-tab.active {
+                color: var(--primary-color);
+            }
+            
+            .auth-tab.active:after {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: var(--primary-color);
+            }
+            
+            .auth-forms {
+                position: relative;
+            }
+            
+            .auth-form {
+                display: none;
+            }
+            
+            .auth-form.active {
+                display: block;
+            }
+            
+            .form-group {
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .input-with-icon {
+                position: relative;
+            }
+            
+            .input-with-icon i {
+                position: absolute;
+                left: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--text-light);
+            }
+            
+            .input-with-icon input {
+                padding-left: 40px;
+            }
+            
+            .remember-forgot {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .checkbox-container {
+                display: flex;
+                align-items: center;
+            }
+            
+            .checkbox-container label {
+                margin-left: 8px;
+                cursor: pointer;
+            }
+            
+            .forgot-password {
+                color: var(--primary-color);
+                font-size: 0.875rem;
+            }
+            
+            .btn-block {
+                width: 100%;
+            }
+            
+            .form-hint {
+                display: block;
+                font-size: 0.75rem;
+                color: var(--text-light);
+                margin-top: 4px;
+            }
+            
+            .auth-benefits {
+                list-style: none;
+                padding: 0;
+                margin: var(--spacing-md) 0 var(--spacing-lg);
+            }
+            
+            .auth-benefits li {
+                margin-bottom: var(--spacing-sm);
+                display: flex;
+                align-items: center;
+            }
+            
+            .auth-benefits i {
+                margin-right: 8px;
+                color: var(--secondary-color);
+            }
+            
+            .auth-testimonial {
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: var(--spacing-md);
+                border-radius: var(--border-radius-md);
+                margin-top: auto;
+            }
+            
+            .testimonial-author {
+                margin-top: var(--spacing-sm);
+            }
+            
+            .author-name {
+                font-weight: 600;
+                display: block;
+            }
+            
+            .author-title {
+                font-size: 0.875rem;
+                opacity: 0.8;
+            }
+            
+            .alert-success, .alert-error {
+                padding: 10px 15px;
+                border-radius: var(--border-radius-md);
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .alert-success {
+                background-color: rgba(52, 199, 89, 0.1);
+                border: 1px solid var(--success-color);
+                color: var(--success-color);
+            }
+            
+            .alert-error {
+                background-color: rgba(255, 59, 48, 0.1);
+                border: 1px solid var(--error-color);
+                color: var(--error-color);
+            }
+            
+            .error-message {
+                color: var(--error-color);
+                font-size: 0.75rem;
+                margin-top: 4px;
+            }
+            
+            input.error {
+                border-color: var(--error-color);
+            }
+            
+            @media (max-width: 991.98px) {
+                .auth-container {
+                    flex-direction: column;
+                }
+                
+                .auth-info {
+                    padding: var(--spacing-lg);
+                }
+            }
+            
+            @media (max-width: 767.98px) {
+                #auth-section {
+                    padding-top: 80px;
+                }
+                
+                .auth-form-container {
+                    padding: var(--spacing-md);
+                }
+                
+                .auth-info {
+                    padding: var(--spacing-md);
+                }
+            }
+   
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="auth-buttons">
+                        <a href="login.html" class="login-btn" style="padding: 10px;">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+       <!-- Page Header -->
+       <section id="hero" class="bg-light" 
+       style="
+           background: linear-gradient(to right, black, steelblue);
+           color: honeydew;
+        ">
+           <div class="container">
+               <div class="page-header-content">
+                   <h1 style="color: honeydew;">Pricing Plans</h1>
+                   <p>Transparent pricing options for your web development needs</p>
+               </div>
+           </div>
+       </section>
+
+    <form action="./php/admin-verify.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+    </form>
+    
+   <!-- Footer Section -->
+   <footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+                <p>Professional web design and development solutions for businesses of all sizes.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#seo">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind Post Office, Blantyre, Malawi</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:++265886515165"> (+265) 88 651 5165</a></li>
+                        <li><i class="fas fa-envelope"></i> enniedevelopers@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabButtons = document.querySelectorAll('.auth-tab');
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+    
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove 'active' from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                // Add 'active' to the clicked button
+                this.classList.add('active');
+    
+                // Show corresponding form
+                const target = this.getAttribute('data-tab');
+                if (target === 'login') {
+                    loginForm.classList.add('active');
+                    registerForm.classList.remove('active');
+                } else if (target === 'register') {
+                    registerForm.classList.add('active');
+                    loginForm.classList.remove('active');
+                }
+            });
+        });
+    });
+    </script>
+    
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+ 
+</body>
+</html>

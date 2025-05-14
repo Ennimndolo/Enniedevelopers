@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EnnieDevelopers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+         #auth-section {
+                min-height: calc(100vh - 300px);
+                display: flex;
+                align-items: center;
+                padding-top: 100px;
+            }
+            
+            .auth-container {
+                display: flex;
+                background-color: white;
+                border-radius: var(--border-radius-lg);
+                box-shadow: var(--shadow-lg);
+                overflow: hidden;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            
+            .auth-form-container {
+                flex: 1;
+                padding: var(--spacing-lg);
+            }
+            
+            .auth-info {
+                flex: 1;
+                background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+                color: white;
+                padding: var(--spacing-lg);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .auth-tabs {
+                display: flex;
+                margin-bottom: var(--spacing-lg);
+                border-bottom: 1px solid var(--border-color);
+            }
+            
+            .auth-tab {
+                background: none;
+                border: none;
+                padding: var(--spacing-md) var(--spacing-lg);
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--text-light);
+                cursor: pointer;
+                position: relative;
+                transition: color var(--transition-fast);
+            }
+            
+            .auth-tab:hover {
+                color: var(--primary-color);
+            }
+            
+            .auth-tab.active {
+                color: var(--primary-color);
+            }
+            
+            .auth-tab.active:after {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: var(--primary-color);
+            }
+            
+            .auth-forms {
+                position: relative;
+            }
+            
+            .auth-form {
+                display: none;
+            }
+            
+            .auth-form.active {
+                display: block;
+            }
+            
+            .form-group {
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .input-with-icon {
+                position: relative;
+            }
+            
+            .input-with-icon i {
+                position: absolute;
+                left: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--text-light);
+            }
+            
+            .input-with-icon input {
+                padding-left: 40px;
+            }
+            
+            .remember-forgot {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .checkbox-container {
+                display: flex;
+                align-items: center;
+            }
+            
+            .checkbox-container label {
+                margin-left: 8px;
+                cursor: pointer;
+            }
+            
+            .forgot-password {
+                color: var(--primary-color);
+                font-size: 0.875rem;
+            }
+            
+            .btn-block {
+                width: 100%;
+            }
+            
+            .form-hint {
+                display: block;
+                font-size: 0.75rem;
+                color: var(--text-light);
+                margin-top: 4px;
+            }
+            
+            .auth-benefits {
+                list-style: none;
+                padding: 0;
+                margin: var(--spacing-md) 0 var(--spacing-lg);
+            }
+            
+            .auth-benefits li {
+                margin-bottom: var(--spacing-sm);
+                display: flex;
+                align-items: center;
+            }
+            
+            .auth-benefits i {
+                margin-right: 8px;
+                color: var(--secondary-color);
+            }
+            
+            .auth-testimonial {
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: var(--spacing-md);
+                border-radius: var(--border-radius-md);
+                margin-top: auto;
+            }
+            
+            .testimonial-author {
+                margin-top: var(--spacing-sm);
+            }
+            
+            .author-name {
+                font-weight: 600;
+                display: block;
+            }
+            
+            .author-title {
+                font-size: 0.875rem;
+                opacity: 0.8;
+            }
+            
+            .alert-success, .alert-error {
+                padding: 10px 15px;
+                border-radius: var(--border-radius-md);
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .alert-success {
+                background-color: rgba(52, 199, 89, 0.1);
+                border: 1px solid var(--success-color);
+                color: var(--success-color);
+            }
+            
+            .alert-error {
+                background-color: rgba(255, 59, 48, 0.1);
+                border: 1px solid var(--error-color);
+                color: var(--error-color);
+            }
+            
+            .error-message {
+                color: var(--error-color);
+                font-size: 0.75rem;
+                margin-top: 4px;
+            }
+            
+            input.error {
+                border-color: var(--error-color);
+            }
+            
+            @media (max-width: 991.98px) {
+                .auth-container {
+                    flex-direction: column;
+                }
+                
+                .auth-info {
+                    padding: var(--spacing-lg);
+                }
+            }
+            
+            @media (max-width: 767.98px) {
+                #auth-section {
+                    padding-top: 80px;
+                }
+                
+                .auth-form-container {
+                    padding: var(--spacing-md);
+                }
+                
+                .auth-info {
+                    padding: var(--spacing-md);
+                }
+            }
+   
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="auth-buttons">
+                        <a href="login.html" class="login-btn" style="padding: 10px;">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Auth Section -->
+    <section id="auth-section" class="section-padding">
+        <div class="container">
+            
+            <div class="auth-container">
+                <div class="auth-form-container">
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" data-tab="login">Login</button>
+                        <button class="auth-tab" data-tab="register">Register</button>
+                    </div>
+                    
+                    <div class="auth-forms">
+                        
+                        
+                        <!-- Login Form -->
+                        <form id="login-form" class="auth-form active" action="./php/login.php" method="POST">
+                            <input type="hidden" name="action" value="login">
+                            
+                            <!-- Status Messages -->
+                            <div id="login-success" class="alert-success" style="display: none;"></div>
+                            <div id="login-error" class="alert-error" style="display: none;"></div>
+                            
+                            <div class="form-group">
+                                <label for="login-username">Username <span class="required">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="login-username" name="username" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="login-password">Password <span class="required">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="login-password" name="password" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group remember-forgot">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="remember-me" name="remember-me">
+                                    <label for="remember-me">Remember me</label>
+                                </div>
+                                <a href="#" class="forgot-password">Forgot password?</a>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> Login</button>
+                            </div>
+                        </form>
+                        
+                        <!-- Register Form -->
+                        <form id="register-form" class="auth-form" action="./php/register-process.php" method="POST">
+                            <input type="hidden" name="action" value="register">
+                            
+                            <!-- Status Messages -->
+                            <div id="register-success" class="alert-success" style="display: none;"></div>
+                            <div id="register-error" class="alert-error" style="display: none;"></div>
+                            
+                            <div class="form-group">
+                                <label for="register-username">Username <span class="required">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="register-username" name="username" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="register-email">Email Address <span class="required">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="register-email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="register-password">Password <span class="required">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="register-password" name="password" required minlength="8">
+                                </div>
+                                <small class="form-hint">Password must be at least 8 characters long</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="register-confirm-password">Confirm Password <span class="required">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="register-confirm-password" name="confirm_password" required minlength="8">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="terms-agree" name="terms-agree" required>
+                                    <label for="terms-agree">I agree to the <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a></label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="auth-info">
+                    <div class="auth-info-content">
+                        <h2>Welcome to EnnieDevelopers</h2>
+                        <p>Login or create an account to:</p>
+                        <ul class="auth-benefits">
+                            <li><i class="fas fa-check-circle"></i> Access your client dashboard</li>
+                            <li><i class="fas fa-check-circle"></i> Track your project progress</li>
+                            <li><i class="fas fa-check-circle"></i> Communicate with our team</li>
+                            <li><i class="fas fa-check-circle"></i> View and pay invoices</li>
+                            <li><i class="fas fa-check-circle"></i> Request changes and support</li>
+                        </ul>
+                        
+                        <div class="auth-testimonial">
+                            <div class="testimonial-content">
+                                <p>"EnnieDevelopers transformed our online presence with a stunning website that perfectly captures our brand identity. Their customer portal made the entire process transparent and efficient."</p>
+                                <div class="testimonial-author">
+                                    <span class="author-name">Enson Mndolo</span>
+                                    <span class="author-title">CEO, EnnieDevelopers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Button -->
+    <div class="chat-widget" id="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-popup" id="chat-popup">
+            <!-- Chat widget content will be loaded dynamically via JavaScript -->
+        </div>
+    </div>
+
+   <!-- Footer Section -->
+   <footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+                <p>Professional web design and development solutions for businesses of all sizes.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#seo">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind Post Office, Blantyre, Malawi</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:++265886515165"> (+265) 88 651 5165</a></li>
+                        <li><i class="fas fa-envelope"></i> enniedevelopers@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabButtons = document.querySelectorAll('.auth-tab');
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+    
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove 'active' from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                // Add 'active' to the clicked button
+                this.classList.add('active');
+    
+                // Show corresponding form
+                const target = this.getAttribute('data-tab');
+                if (target === 'login') {
+                    loginForm.classList.add('active');
+                    registerForm.classList.remove('active');
+                } else if (target === 'register') {
+                    registerForm.classList.add('active');
+                    loginForm.classList.remove('active');
+                }
+            });
+        });
+    });
+    </script>
+    
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+ 
+</body>
+</html>

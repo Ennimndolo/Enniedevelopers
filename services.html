@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - EnnieDevelopers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+       
+
+    </style>
+</head>
+<body>
+        <!-- Preloader bar -->
+    <div id="preloader">
+  <div class="loader-container">
+    <div class="loader-bar"></div>
+  </div>
+</div>
+    <!-- Scroll up button -->
+        <div id="scrollTopDiv" onclick="scrollToTop()" title="Scroll to top">↑</div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+  <div id="hero" class="hero" style="  background-image: url('/images/tech/mobile.jpg');
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;">
+    <h2 style="
+    color: honeydew; 
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    "> Welcome to EnnieDevelopers</h2>
+    <h3
+    style="
+    color: rgba(240, 255, 240, 0.66); 
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;"
+    >OUR SERVICES</h3>
+  
+  </div>
+
+    <!-- Services Overview Section -->
+    <section id="services-overview" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Offer</h2>
+                <p>We provide end-to-end digital solutions to help your business succeed online</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card expandable" id="web-design">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Design</h3>
+                        <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <p>Custom, responsive website designs that look great on all devices and align with your brand identity.</p>
+                        <div class="expandable-content">
+                            <h4>What We Offer</h4>
+                            <ul class="service-features">
+                                <li>Responsive layouts for all devices</li>
+                                <li>User-centered design approach</li>
+                                <li>Brand-aligned visual elements</li>
+                                <li>Modern UI/UX best practices</li>
+                                <li>Accessibility compliant</li>
+                            </ul>
+                            <h4>Our Design Process</h4>
+                            <p>Our design process begins with understanding your brand, audience, and goals. We create wireframes and mockups for your approval before moving to development. This collaborative approach ensures the final design perfectly matches your vision.</p>
+                            <a href="contact.html#contact-form" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card expandable" id="web-development">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <p>Custom web applications with powerful functionality using the latest technologies and best practices.</p>
+                        <div class="expandable-content">
+                            <h4>What We Offer</h4>
+                            <ul class="service-features">
+                                <li>Front-end & back-end development</li>
+                                <li>Content management systems</li>
+                                <li>Custom web applications</li>
+                                <li>API integrations</li>
+                                <li>Performance optimization</li>
+                            </ul>
+                            <h4>Technologies We Use</h4>
+                            <p>We work with modern frameworks and technologies including React, Vue.js, Node.js, PHP, Python, and more. Our developers stay up-to-date with the latest industry standards to deliver fast, secure, and scalable web applications.</p>
+                            <a href="contact.html#contact-form" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card expandable" id="e-commerce">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-Commerce</h3>
+                        <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <p>Online stores with secure payment integration, inventory management, and customer accounts.</p>
+                        <div class="expandable-content">
+                            <h4>What We Offer</h4>
+                            <ul class="service-features">
+                                <li>Custom shopping experiences</li>
+                                <li>Secure payment gateways</li>
+                                <li>Inventory management</li>
+                                <li>Customer account systems</li>
+                                <li>Order processing automation</li>
+                            </ul>
+                            <h4>E-commerce Platforms</h4>
+                            <p>We build custom e-commerce solutions and also work with platforms like WooCommerce, Shopify, and Magento. Our e-commerce sites are optimized for conversions and provide seamless shopping experiences across all devices.</p>
+                            <a href="contact.html#contact-form" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card expandable" id="mobile-apps">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <p>Native and cross-platform mobile applications for iOS and Android with seamless user experiences.</p>
+                        <div class="expandable-content">
+                            <h4>What We Offer</h4>
+                            <ul class="service-features">
+                                <li>iOS & Android development</li>
+                                <li>Cross-platform solutions</li>
+                                <li>App Store submission</li>
+                                <li>Push notifications</li>
+                                <li>Offline functionality</li>
+                            </ul>
+                            <h4>App Development Approach</h4>
+                            <p>Whether you need a native application for maximum performance or a cross-platform solution for broader reach, our mobile development team can deliver. We focus on creating intuitive, feature-rich apps that users love.</p>
+                            <a href="contact.html#contact-form" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card expandable" id="seo">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Services</h3>
+                        <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <p>Search engine optimization to improve your website's visibility and ranking in search results.</p>
+                        <div class="expandable-content">
+                            <h4>What We Offer</h4>
+                            <ul class="service-features">
+                                <li>Keyword research & strategy</li>
+                                <li>On-page optimization</li>
+                                <li>Link building</li>
+                                <li>Content strategy</li>
+                                <li>Performance reporting</li>
+                            </ul>
+                            <h4>Our SEO Strategy</h4>
+                            <p>We take a comprehensive approach to SEO, focusing on both technical optimization and content quality. We use data-driven strategies to identify opportunities and track performance, providing regular reports on your search ranking progress.</p>
+                            <a href="contact.html#contact-form" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card expandable" id="maintenance">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Website Maintenance</h3>
+                        <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <p>Regular updates, security patches, and technical support to keep your website running smoothly.</p>
+                        <div class="expandable-content">
+                            <h4>What We Offer</h4>
+                            <ul class="service-features">
+                                <li>Regular software updates</li>
+                                <li>Security monitoring</li>
+                                <li>Performance optimization</li>
+                                <li>Backup management</li>
+                                <li>Technical support</li>
+                            </ul>
+                            <h4>Maintenance Plans</h4>
+                            <p>Our maintenance plans ensure your website remains secure, up-to-date, and performing optimally. We offer different service levels to meet your needs, from basic updates to comprehensive technical support and content management.</p>
+                            <a href="contact.html#contact-form" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="our-process" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Process</h2>
+                <p>How we bring your digital ideas to life</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>We begin by understanding your business goals, target audience, and project requirements through in-depth consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Planning</h3>
+                        <p>Creating a detailed project plan with timelines, deliverables, and milestones to ensure a smooth development process.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>Developing wireframes and visual designs that align with your brand and provide optimal user experience.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>Building your website or application with clean, efficient code using the latest technologies and best practices.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Testing</h3>
+                        <p>Rigorous quality assurance testing across devices and browsers to ensure everything works flawlessly.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Launch</h3>
+                        <p>Deploying your project to production and ensuring a smooth transition with continuous support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technologies We Use</h2>
+                <p>We leverage the latest technologies to deliver high-quality solutions</p>
+            </div>
+            
+            <div class="technologies-content">
+                <div class="tech-category">
+                    <h3>Front-End Development</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="./images/tech/icons8-html5-48.png" alt="HTML5" style="height: 2em;">
+                            <span>HTML5</span>
+                        </div>
+                      
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-javascript-50.png" alt="JavaScript" style="height: 2em;">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-react-50.png" alt="React" style="height: 2em;">
+                            <span>React</span>
+                        </div>
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-vue-js-50.png" alt="Vue.js" style="height: 2em;">
+                            <span>Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Back-End Development</h3>
+                    <div class="tech-icon" style="display: flex;">
+                        <img src="images/tech/icons8-node-js-50.png" alt="Node.js" style="height: 2em;">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-php-50.png" alt="PHP" style="height: 2em;">
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-python-48.png" alt="Python" style="height: 2em;">
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-mysql-50.png" alt="MySQL" style="height: 2em;">
+                            <span>MySQL</span>
+                        </div>
+                        
+                    </div>
+            
+                
+                <div class="tech-category">
+                    <h3>Mobile Development</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-react-native-50.png" alt="React Native" style="height: 2em;">
+                            <span>React Native</span>
+                        </div>
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-flutter-24.png" alt="Flutter" style="height: 2em;">
+                            <span>Flutter</span>
+                        </div>
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-swift-48.png" alt="Swift" style="height: 2em;">
+                            <span>Swift</span>
+                        </div>
+                        <div class="tech-icon" style="display: flex;">
+                            <img src="images/tech/icons8-kotlin-50.png" alt="Kotlin" style="height: 2em;">
+                            <span>Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common questions about our services</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to build a website?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The timeline depends on the complexity of the project. A simple brochure website might take 2-4 weeks, while a complex e-commerce platform could take 2-3 months. During our initial consultation, we'll provide a more specific timeline based on your requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your pricing structure?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer both project-based and hourly pricing models. Project-based pricing is ideal for clients with clearly defined requirements, while hourly rates work well for ongoing development or projects with evolving needs. You can view our standard packages on our <a href="pricing.html">pricing page</a>, or contact us for a custom quote.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide website maintenance services?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer website maintenance packages that include regular updates, security monitoring, content updates, and technical support. Our maintenance plans ensure your website remains secure, up-to-date, and performing optimally.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can you help with website content creation?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer content creation services, including copywriting, image selection, and graphic design. Our team can help craft compelling content that engages your audience and aligns with your brand voice.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide hosting for websites?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer reliable hosting solutions with various packages to suit different needs. Our hosting services include regular backups, security monitoring, and technical support to ensure your website remains accessible and secure.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your approach to website security?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Security is a top priority in all our projects. We implement best practices such as secure coding standards, regular updates, SSL certificates, firewall protection, and secure authentication methods. We also conduct security audits and stay updated on the latest security threats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to start your project?</h2>
+                <p>Contact EnnieDevelopers today for a free consultation</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Button -->
+    <div class="chat-widget" id="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-popup" id="chat-popup">
+            <!-- Chat widget content will be loaded dynamically via JavaScript -->
+        </div>
+    </div>
+
+   <!-- Footer Section -->
+   <footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+                <p>Professional web design and development solutions for businesses of all sizes.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#seo">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind Post Office, Blantyre, Malawi</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:++265886515165"> (+265) 88 651 5165</a></li>
+                        <li><i class="fas fa-envelope"></i> enniedevelopers@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                    <a href="Terms & pirvancy.html">Privacy Policy</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- CSS for Service Card Animation -->
+    <style>
+        /* Expandable Service Cards */
+        .service-card.expandable {
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            padding: var(--spacing-lg);
+            padding-bottom: 0;
+        }
+        
+        .service-content {
+            padding: 0 var(--spacing-lg) var(--spacing-lg);
+        }
+        
+        .service-card.expandable h3 {
+            flex: 1;
+            margin-bottom: 0;
+        }
+        
+        .expand-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+        
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            opacity: 0;
+            margin-top: var(--spacing-md);
+            border-top: 1px solid transparent;
+            padding-top: 0;
+        }
+        
+        .service-card.expanded .expandable-content {
+            max-height: 1000px;
+            opacity: 1;
+            border-top: 1px solid var(--border-color);
+            padding-top: var(--spacing-md);
+            transition: max-height 0.5s ease, opacity 0.3s ease 0.2s;
+        }
+        
+        .expandable-content h4 {
+            font-size: 1.125rem;
+            margin: var(--spacing-md) 0 var(--spacing-sm);
+        }
+        
+        .expandable-content h4:first-child {
+            margin-top: 0;
+        }
+        
+        .expandable-content .btn {
+            margin-top: var(--spacing-md);
+        }
+        
+        /* Enhanced hover effect */
+        .service-card.expandable:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        /* Special effects when expanded */
+        .service-card.expanded {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+            z-index: 10;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        /* Highlight effect for icon when expanded */
+        .service-card.expanded .service-icon {
+            background-color: var(--primary-color);
+            color: white;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(74, 108, 247, 0.5);
+        }
+        
+        /* Title highlight when expanded */
+        .service-card.expanded h3 {
+            color: var(--primary-color);
+            transform: translateX(5px);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        /* Add a subtle background highlight */
+        .service-card.expanded {
+            background: linear-gradient(to right, rgba(74, 108, 247, 0.05), white, white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Add a subtle wave effect behind the expanded card content */
+        .service-card.expanded::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(74, 108, 247, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: scale(0);
+            opacity: 0;
+            transition: transform 0.8s ease, opacity 0.8s ease;
+            z-index: 0;
+        }
+        
+        .service-card.expanded::before {
+            animation: pulseBackground 3s ease-in-out infinite;
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        @keyframes pulseBackground {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.5); opacity: 0.2; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+        
+        /* Ensure content stays above the background effect */
+        .service-card.expandable .service-header,
+        .service-card.expandable .service-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Add animation for button */
+        .service-card.expanded .btn {
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(74, 108, 247, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(74, 108, 247, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(74, 108, 247, 0);
+            }
+        }
+        
+        @keyframes contentFadeIn {
+            0% {
+                opacity: 0.5;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Enhanced animation for service features */
+        .service-card.expanded .service-features li {
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: featureSlideIn 0.4s ease forwards;
+        }
+        
+        .service-card.expanded .service-features li:nth-child(1) { animation-delay: 0.1s; }
+        .service-card.expanded .service-features li:nth-child(2) { animation-delay: 0.2s; }
+        .service-card.expanded .service-features li:nth-child(3) { animation-delay: 0.3s; }
+        .service-card.expanded .service-features li:nth-child(4) { animation-delay: 0.4s; }
+        .service-card.expanded .service-features li:nth-child(5) { animation-delay: 0.5s; }
+        
+        @keyframes featureSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .service-card.expanded {
+                transform: none;
+            }
+        }
+    </style>
+    
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/faq.js"></script>
+    
+    <!-- Service Card Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all expandable service cards
+            const serviceCards = document.querySelectorAll('.service-card.expandable');
+            
+            // Add fade-in animation class to all cards initially
+            serviceCards.forEach((card, index) => {
+                // Add animation class with delay
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                // Stagger the animations
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+            
+            // Add click event to each card
+            serviceCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Don't trigger expansion if clicking on a button or link
+                    if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || 
+                        e.target.closest('a') || e.target.closest('button')) {
+                        return;
+                    }
+                    
+                    // Toggle expanded class
+                    this.classList.toggle('expanded');
+                    
+                    // If this card is now expanded, collapse others
+                    if (this.classList.contains('expanded')) {
+                        serviceCards.forEach(otherCard => {
+                            if (otherCard !== this && otherCard.classList.contains('expanded')) {
+                                otherCard.classList.remove('expanded');
+                            }
+                        });
+                        
+                        // Scroll to this card with a slight delay to allow animation to start
+                        setTimeout(() => {
+                            this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                        
+                        // Add a subtle highlight effect to the content
+                        const content = this.querySelector('.expandable-content');
+                        content.style.animation = 'contentFadeIn 0.8s ease forwards';
+                    }
+                });
+            });
+            
+            // Add an automatic expansion of the first card after page loads
+            setTimeout(() => {
+                // Find the element in viewport and expand it
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Find the first card that's fully visible
+                            const firstVisibleCard = Array.from(serviceCards).find(card => {
+                                const rect = card.getBoundingClientRect();
+                                return rect.top >= 0 && rect.bottom <= window.innerHeight;
+                            });
+                            
+                            if (firstVisibleCard) {
+                                setTimeout(() => {
+                                    firstVisibleCard.classList.add('expanded');
+                                    firstVisibleCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 1000);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                
+                // Start observing the services section
+                observer.observe(document.querySelector('#services'));
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

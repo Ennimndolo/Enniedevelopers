@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnnieDevelopers - Professional Web Design & Development</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader bar -->
+    <div id="preloader">
+  <div class="loader-container">
+    <div class="loader-bar"></div>
+  </div>
+</div>
+
+<!-- Scroll up button -->
+        <div id="scrollTopDiv" onclick="scrollToTop()" title="Scroll to top">↑</div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Web Design & Development Solutions</h1>
+                <p>We create stunning, responsive websites that help businesses grow and succeed in the digital landscape.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html#contact-form" class="btn btn-primary">Get Started</a>
+                    <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/tech/hero.avif" alt="Web Design Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section id="services-preview" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We offer comprehensive web solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Custom, responsive website designs that look great on all devices and align with your brand identity.</p>
+                    <a href="services.html#web-design" class="read-more">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce</h3>
+                    <p>Powerful online stores with secure payment gateways, inventory management, and customer accounts.</p>
+                    <a href="services.html#e-commerce" class="read-more">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications that provide seamless user experiences.</p>
+                    <a href="services.html#mobile-apps" class="read-more">Learn More</a>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-secondary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About EnnieDevelopers</h2>
+                    <p>We are a team of passionate web designers and developers dedicated to creating exceptional digital experiences for businesses of all sizes.</p>
+                    <p>With over 5 years of experience in the industry, we combine technical expertise with creative design to deliver websites that not only look stunning but also perform exceptionally well.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/images/tech/teamm.jpg" alt="Our Team" style="width: 100%; height:100%;" />
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview Section -->
+    <section id="portfolio-preview" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Recent Work</h2>
+                <p>Check out some of our latest projects</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/portfolio/ggc5.png" alt="E-commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>God's Grace Complex</h3>
+                        <p>Web Design, E-commerce</p>
+                        <a href="portfolio.html" class="btn btn-sm">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/revised.jpg" alt="organization Website">
+                    <div class="portfolio-overlay">
+                        <h3>Helping Hands Initiative</h3>
+                        <p>Web Design, Development</p>
+                        <a href="portfolio.html" class="btn btn-sm">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/welcome.jpg" alt="Church Website">
+                    <div class="portfolio-overlay">
+                        <h3>Bethel International Assembly</h3>
+                        <p>Web Design, Development</p>
+                        <a href="portfolio.html" class="btn btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="portfolio.html" class="btn btn-secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to start your project?</h2>
+                <p>Contact us today for a free consultation and quote</p>
+                <a href="contact.html#contact-form" class="btn btn-primary btn-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Button -->
+    <div class="chat-widget" id="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-popup" id="chat-popup">
+            <!-- Chat widget content will be loaded dynamically via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">EnnieDevelopers</span>
+                    </a>
+                    <p>Professional web design and development solutions for businesses of all sizes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="services.html#web-design">Web Design</a></li>
+                            <li><a href="services.html#web-development">Web Development</a></li>
+                            <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                            <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                            <li><a href="services.html#seo">SEO Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind Post Office, Blantyre, Malawi</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:++265886515165"> (+265) 88 651 5165</a></li>
+                            <li><i class="fas fa-envelope"></i> enniedevelopers@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="Terms & pirvancy.html">Privacy Policy</a>
+                 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

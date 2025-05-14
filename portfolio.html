@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - EnnieDevelopers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <!-- Preloader bar -->
+    <div id="preloader">
+  <div class="loader-container">
+    <div class="loader-bar"></div>
+  </div>
+</div>
+    <!-- Scroll up button -->
+        <div id="scrollTopDiv" onclick="scrollToTop()" title="Scroll to top">↑</div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  
+     
+    <!-- Page Header -->
+  <div id="hero" class="hero" style="  background-image: url('/images/tech/mobile.jpg');
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;">
+    <h2 style="
+    color: honeydew; 
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    ">Our Portifolio</h2>
+    <h3
+    style="
+    color: rgba(240, 255, 240, 0.66); 
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;"
+    >                <p>similar projects done so far</p>
+</h3>
+  </div>
+
+    <!-- Portfolio Filter Section -->
+    <section id="portfolio-section" class="section-padding">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="portfolio-filter active" data-filter="all">All Projects</button>
+                <button class="portfolio-filter" data-filter="ecommerce">E-Commerce</button>
+                <button class="portfolio-filter" data-filter="corporate">Organization Website</button>
+                <button class="portfolio-filter" data-filter="portfolio">Church Websites</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- E-Commerce Projects -->
+                <div class="portfolio-item ecommerce">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/ggc5.png" alt="Fashion E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>God's Grace Complex</h3>
+                                <p>E-commerce Website</p>
+                                <a href="#" class="portfolio-link" data-id="1"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item corporate">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/revised.jpg" alt="Electronics E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Helping Hands Initiative </h3>
+                                <p>Organization Website</p>
+                                <a href="#" class="portfolio-link" data-id="2"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Projects -->
+                <div class="portfolio-item portfolio">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/welcome.jpg" alt="Finance Company Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Bethel International Assembly</h3>
+                                <p>Church Website</p>
+                                <a href="#" class="portfolio-link" data-id="3"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="portfolio-modal" class="portfolio-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-close">&times;</div>
+            <div class="modal-content">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Section -->
+    <section id="process-section" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Project Process</h2>
+                <p>How we transform your ideas into successful digital solutions</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>We start by understanding your business goals, target audience, and project requirements through in-depth consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Planning</h3>
+                        <p>Based on the discovery phase, we create a detailed project plan with timelines, deliverables, and milestones.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>Our designers create wireframes and visual designs that align with your brand identity and provide optimal user experience.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>Our development team brings the designs to life with clean, efficient code using the latest technologies and best practices.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Testing & Launch</h3>
+                        <p>Rigorous testing across devices and browsers ensures everything works flawlessly before the final launch.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Support & Growth</h3>
+                        <p>Our relationship continues after launch with ongoing support, maintenance, and strategic guidance for growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about working with us</p>
+            </div>
+            
+            <div class="testimonial-slider" id="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>EnnieDevelopers transformed our online presence with a stunning e-commerce website. Our sales have increased by 40% since the launch, and customers love the seamless shopping experience.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/portfolio/welcome.jpg" alt="Sarah Johnson" class="author-image">
+                            <div class="author-info">
+                                <h4>Pastor Misheck Siment</h4>
+                                <p>Associate Pastor, Bethel International Assembly<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Working with EnnieDevelopers was a fantastic experience. They understood our corporate needs perfectly and delivered a professional website that truly represents our brand values and vision.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/portfolio/revised.jpg" alt="Michael Roberts" class="author-image">
+                            <div class="author-info">
+                                <h4>Trintus Mindano</h4>
+                                <p>CEO, Helping Hands Initiative</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>As a complelx managing director, I needed a website that would showcase our place beautifully. EnnieDevelopers created exactly what I envisioned, with an elegant design that puts my photography at the forefront.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/portfolio/interior 1.jpg" alt="Emma Thompson" class="author-image">
+                            <div class="author-info">
+                                <h4>Wasi Masangano</h4>
+                                <p>Director of God's Grace Complex</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button id="prev-testimonial" class="slider-arrow prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-testimonial" class="slider-arrow next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to start your project?</h2>
+                <p>Contact us today for a free consultation and quote</p>
+                <a href="contact.html#contact-form" class="btn btn-primary btn-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Button -->
+    <div class="chat-widget" id="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-popup" id="chat-popup">
+            <!-- Chat widget content will be loaded dynamically via JavaScript -->
+        </div>
+    </div>
+
+   <!-- Footer Section -->
+   <footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+                <p>Professional web design and development solutions for businesses of all sizes.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#seo">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind Post Office, Blantyre, Malawi</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:++265886515165"> (+265) 88 651 5165</a></li>
+                        <li><i class="fas fa-envelope"></i> enniedevelopers@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                          <a href="Terms & pirvancy.html">Privacy Policy</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- CSS for Portfolio page -->
+    <style>
+        /* Portfolio filter buttons */
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .portfolio-filter {
+            background: none;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-md);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .portfolio-filter:hover {
+            color: var(--primary-color);
+        }
+        
+        .portfolio-filter.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Portfolio grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .portfolio-item {
+            overflow: hidden;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-md);
+            transition: transform var(--transition-normal);
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .portfolio-image {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-normal);
+        }
+        
+        .portfolio-item:hover .portfolio-image img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity var(--transition-normal);
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-info {
+            text-align: center;
+            color: white;
+            padding: var(--spacing-md);
+        }
+        
+        .portfolio-info h3 {
+            margin-bottom: 5px;
+            color: white;
+        }
+        
+        .portfolio-info p {
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .portfolio-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            transition: background-color var(--transition-fast);
+        }
+        
+        .portfolio-link:hover {
+            background-color: var(--primary-dark);
+            color: white;
+        }
+        
+        /* Portfolio Modal */
+        .portfolio-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1050;
+        }
+        
+        .portfolio-modal.active {
+            display: block;
+        }
+        
+        .modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .modal-container {
+            position: relative;
+            width: 90%;
+            max-width: 1000px;
+            max-height: 90vh;
+            margin: 5vh auto;
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+            animation: modalFadeIn 0.3s;
+        }
+        
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-light);
+            cursor: pointer;
+            z-index: 10;
+            transition: color var(--transition-fast);
+        }
+        
+        .modal-close:hover {
+            color: var(--error-color);
+        }
+        
+        .modal-content {
+            padding: var(--spacing-lg);
+        }
+        
+        /* Process steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .process-step {
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .step-content p {
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+        
+        /* Testimonials slider */
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .testimonial-slide {
+            display: none;
+            animation: fadeEffect 1s;
+        }
+        
+        @keyframes fadeEffect {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .testimonial-slide:first-child {
+            display: block;
+        }
+        
+        .testimonial-content {
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .testimonial-quote {
+            margin-bottom: var(--spacing-md);
+            position: relative;
+        }
+        
+        .testimonial-quote i {
+            color: var(--primary-color);
+            font-size: 2rem;
+            opacity: 0.2;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .testimonial-quote p {
+            padding-left: 40px;
+            font-style: italic;
+            color: var(--text-color);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+        }
+        
+        .author-info p {
+            margin-bottom: 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .slider-arrow {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .slider-arrow:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        @media (max-width: 767.98px) {
+            .portfolio-filters {
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: flex-start;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-author {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Portfolio Filtering
+            const filterButtons = document.querySelectorAll('.portfolio-filter');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            // Initial state: show all items
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show/hide items based on filter
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Portfolio Modal
+            const portfolioModal = document.getElementById('portfolio-modal');
+            const modalContent = portfolioModal.querySelector('.modal-content');
+            const modalClose = portfolioModal.querySelector('.modal-close');
+            const modalOverlay = portfolioModal.querySelector('.modal-overlay');
+            const portfolioLinks = document.querySelectorAll('.portfolio-link');
+            
+            // Open modal when portfolio item is clicked
+            portfolioLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Get project ID
+                    const projectId = this.getAttribute('data-id');
+                    
+                    // Load project content
+                    loadProjectContent(projectId);
+                    
+                    // Show modal
+                    portfolioModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                });
+            });
+            
+            // Close modal
+            modalClose.addEventListener('click', closeModal);
+            modalOverlay.addEventListener('click', closeModal);
+            
+            function closeModal() {
+                portfolioModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+            
+            // Load project content
+            function loadProjectContent(projectId) {
+                // In a real application, this would fetch data from the server
+                // For now, we'll use static content based on the project ID
+                
+                const projects = {
+                    1: {
+                        title: 'Fashion Store E-Commerce Website',
+                        category: 'E-Commerce',
+                        client: 'StyleTrend Fashion',
+                        completionDate: 'June 2024',
+                        description: `
+                            <p>This fashion e-commerce website was designed to create a seamless and engaging shopping experience for customers. The client wanted a modern, responsive design that would showcase their products beautifully while making the shopping process intuitive and efficient.</p>
+                            
+                            <p>We implemented a custom e-commerce solution with the following features:</p>
+                            
+                            <ul>
+                                <li>Responsive design that works flawlessly across all devices</li>
+                                <li>Advanced product filtering and search functionality</li>
+                                <li>Secure payment processing with multiple payment options</li>
+                                <li>Customer account management with order history</li>
+                                <li>Wishlist and favorites functionality</li>
+                                <li>Integration with the client's inventory management system</li>
+                            </ul>
+                            
+                            <p>The result was a 40% increase in online sales and a significant reduction in cart abandonment rates.</p>
+                        `,
+                        images: [
+                            'images/portfolio/ecommerce-1-detail-1.jpg',
+                            'images/portfolio/ecommerce-1-detail-2.jpg',
+                            'images/portfolio/ecommerce-1-detail-3.jpg'
+                        ],
+                        technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'Responsive Design']
+                    },
+                    // Additional projects would be defined here
+                    2: {
+                        title: 'TechGadgets Electronics Store',
+                        category: 'E-Commerce',
+                        client: 'TechGadgets Inc.',
+                        completionDate: 'April 2024',
+                        description: `
+                            <p>TechGadgets needed a modern e-commerce platform to sell their electronics products online. We developed a feature-rich online store with an emphasis on product comparisons and detailed specifications.</p>
+                            
+                            <p>Key features included:</p>
+                            
+                            <ul>
+                                <li>Dynamic product comparison tool</li>
+                                <li>Technical specification filtering</li>
+                                <li>Customer reviews and ratings system</li>
+                                <li>Real-time inventory tracking</li>
+                                <li>Integration with multiple shipping services</li>
+                            </ul>
+                            
+                            <p>The website resulted in a 55% increase in conversion rate and significantly improved customer satisfaction scores.</p>
+                        `,
+                        images: [
+                            'images/portfolio/ecommerce-2-detail-1.jpg',
+                            'images/portfolio/ecommerce-2-detail-2.jpg'
+                        ],
+                        technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'MongoDB', 'Responsive Design']
+                    }
+                };
+                
+                // Get project data
+                const project = projects[projectId];
+                
+                if (!project) {
+                    modalContent.innerHTML = '<p>Project details not found.</p>';
+                    return;
+                }
+                
+                // Create modal content
+                let content = `
+                    <div class="project-details">
+                        <h2>${project.title}</h2>
+                        
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <strong>Category:</strong> ${project.category}
+                            </div>
+                            <div class="meta-item">
+                                <strong>Client:</strong> ${project.client}
+                            </div>
+                            <div class="meta-item">
+                                <strong>Completion Date:</strong> ${project.completionDate}
+                            </div>
+                        </div>
+                        
+                        <div class="project-images">
+                `;
+                
+                // Add project images (if available)
+                if (project.images && project.images.length > 0) {
+                    content += '<div class="project-gallery">';
+                    project.images.forEach(image => {
+                        content += `<img src="${image}" alt="${project.title}">`;
+                    });
+                    content += '</div>';
+                }
+                
+                content += `
+                        </div>
+                        
+                        <div class="project-description">
+                            <h3>Project Overview</h3>
+                            ${project.description}
+                        </div>
+                        
+                        <div class="project-technologies">
+                            <h3>Technologies Used</h3>
+                            <div class="technology-tags">
+                `;
+                
+                // Add technology tags
+                if (project.technologies && project.technologies.length > 0) {
+                    project.technologies.forEach(tech => {
+                        content += `<span class="tech-tag">${tech}</span>`;
+                    });
+                }
+                
+                content += `
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Add CSS for project details
+                content += `
+                    <style>
+                        .project-details {
+                            color: var(--text-color);
+                        }
+                        
+                        .project-details h2 {
+                            margin-bottom: var(--spacing-md);
+                            font-size: 1.75rem;
+                        }
+                        
+                        .project-meta {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: var(--spacing-md);
+                            margin-bottom: var(--spacing-lg);
+                            padding-bottom: var(--spacing-md);
+                            border-bottom: 1px solid var(--border-color);
+                        }
+                        
+                        .meta-item {
+                            color: var(--text-light);
+                        }
+                        
+                        .meta-item strong {
+                            color: var(--text-color);
+                        }
+                        
+                        .project-images {
+                            margin-bottom: var(--spacing-lg);
+                        }
+                        
+                        .project-gallery {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                            gap: var(--spacing-md);
+                        }
+                        
+                        .project-gallery img {
+                            width: 100%;
+                            height: auto;
+                            border-radius: var(--border-radius-md);
+                            object-fit: cover;
+                        }
+                        
+                        .project-description {
+                            margin-bottom: var(--spacing-lg);
+                        }
+                        
+                        .project-description h3 {
+                            margin-bottom: var(--spacing-sm);
+                        }
+                        
+                        .technology-tags {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                        }
+                        
+                        .tech-tag {
+                            display: inline-block;
+                            padding: 5px 10px;
+                            border-radius: 20px;
+                            background-color: var(--primary-light);
+                            color: var(--primary-color);
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                        }
+                    </style>
+                `;
+                
+                // Set modal content
+                modalContent.innerHTML = content;
+            }
+            
+            // Testimonial Slider
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const prevBtn = document.getElementById('prev-testimonial');
+            const nextBtn = document.getElementById('next-testimonial');
+            let currentSlide = 0;
+            
+            // Function to show a specific slide
+            function showSlide(n) {
+                // Hide all slides
+                slides.forEach(slide => slide.style.display = 'none');
+                
+                // Calculate the index (handle wrapping around at both ends)
+                currentSlide = (n + slides.length) % slides.length;
+                
+                // Show current slide
+                slides[currentSlide].style.display = 'block';
+            }
+            
+            // Event listeners for next and previous buttons
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+                nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+                
+                // Auto advance slides every 5 seconds
+                setInterval(() => showSlide(currentSlide + 1), 5000);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - EnnieDevelopers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <!-- Preloader bar -->
+    <div id="preloader">
+  <div class="loader-container">
+    <div class="loader-bar"></div>
+  </div>
+</div>
+    <!-- Scroll up button -->
+        <div id="scrollTopDiv" onclick="scrollToTop()" title="Scroll to top">↑</div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+    <!-- Page Header -->
+  <div id="hero" class="hero" style="  background-image: url('/images/tech/mobile.jpg');
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;">
+    <h2 style="
+    color: honeydew; 
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    ">Our Blog</h2>
+    <h3
+    style="
+    color: rgba(240, 255, 240, 0.66); 
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;"
+    >                <p>What's happening around the world concerning Web design (Trends)?
+</h3>
+  </div>s
+
+
+    <!-- Blog Content -->
+    <section id="blog-content" class="section-padding">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Featured Post -->
+                    <article class="blog-post featured-post">
+                        <div class="post-thumbnail">
+                            <img src="images/tech/hero.avif" alt="Web Design Trends for 2025">
+                            <div class="post-category">Web Design</div>
+                        </div>
+                        <div class="post-content">
+                            <h2 class="post-title"><a href="blog-post.html"> Web Design Trends That Will Dominate in 2025</a></h2>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> May 1, 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> Sarah Johnson</span>
+                                <span class="post-comments"><i class="far fa-comment"></i> 15 Comments</span>
+                            </div>
+                            <p class="post-excerpt">
+                                The web design landscape is constantly evolving with new technologies, user preferences, and aesthetic styles. 
+                                In this comprehensive guide, we explore the cutting-edge design trends that are shaping the digital world in 2025, 
+                                from immersive 3D elements to sustainable design principles.
+                            </p>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Regular Posts -->
+                    <div class="regular-posts">
+                        <article class="blog-post">
+                            <div class="post-thumbnail">
+                                <img src="images/tech/search.png" alt="SEO Strategies" height="object-fit">
+                                <div class="post-category">Search Engine Optimizaton</div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="blog-post.html">SEO Strategies That Actually Work in 2025</a></h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar-alt"></i> April 25, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> Michael Roberts</span>
+                                </div>
+                                <p class="post-excerpt">
+                                    With search engines constantly updating their algorithms, SEO strategies need to evolve. 
+                                    Discover which strategies are delivering real results in today's competitive digital landscape.
+                                </p>
+                                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-post">
+                            <div class="post-thumbnail">
+                                <img src="images/tech/Ecom.jpg" alt="E-commerce Optimization">
+                                <div class="post-category">E-commerce</div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="blog-post.html">E-commerce Optimization: Boosting Conversion Rates</a></h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar-alt"></i> April 18, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> Emma Thompson</span>
+                                </div>
+                                <p class="post-excerpt">
+                                    Optimizing your e-commerce website can significantly impact your conversion rates. 
+                                    Learn practical steps to enhance user experience, streamline checkout processes, and increase sales.
+                                </p>
+                                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-post">
+                            <div class="post-thumbnail">
+                                <img src="images/tech/mobile.jpg" alt="Mobile-First Development">
+                                <div class="post-category">Development</div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="blog-post.html">Why Mobile-First Development Is No Longer Optional</a></h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar-alt"></i> April 10, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> David Chen</span>
+                                </div>
+                                <p class="post-excerpt">
+                                    With mobile devices accounting for over 60% of web traffic, a mobile-first approach is essential. 
+                                    Explore why this strategy should be at the core of your development process.
+                                </p>
+                                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-post">
+                            <div class="post-thumbnail">
+                                <img src="images/tech/AI.jpg" alt="AI in Web Design">
+                                <div class="post-category">Technology</div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="blog-post.html">How AI Is Transforming the Web Design Industry</a></h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar-alt"></i> April 3, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> Sarah Johnson</span>
+                                </div>
+                                <p class="post-excerpt">
+                                    Artificial intelligence is revolutionizing web design processes and outcomes. 
+                                    Discover how AI tools are being used for everything from layout creation to content generation.
+                                </p>
+                                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-post">
+                            <div class="post-thumbnail">
+                                <img src="images/tech/security.jpg" alt="Website Security">
+                                <div class="post-category">Security</div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="blog-post.html">Essential Website Security Measures for 2025</a></h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar-alt"></i> March 27, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> Michael Roberts</span>
+                                </div>
+                                <p class="post-excerpt">
+                                    With cyber threats becoming increasingly sophisticated, website security is more important than ever. 
+                                    Learn about the essential security measures every website should implement.
+                                </p>
+                                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <span class="page-numbers current">1</span>
+                        <a href="#" class="page-numbers">2</a>
+                        <a href="#" class="page-numbers">3</a>
+                        <a href="#" class="page-numbers next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget search-widget">
+                        <h3 class="widget-title">Search</h3>
+                        <form class="search-form">
+                            <input type="text" placeholder="Search blog...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget categories-widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Web Design <span>(12)</span></a></li>
+                            <li><a href="#">Development <span>(9)</span></a></li>
+                            <li><a href="#">E-commerce <span>(7)</span></a></li>
+                            <li><a href="#">SEO <span>(5)</span></a></li>
+                            <li><a href="#">Technology <span>(8)</span></a></li>
+                            <li><a href="#">Security <span>(4)</span></a></li>
+                            <li><a href="#">Business <span>(6)</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Recent Posts Widget -->
+                    <div class="sidebar-widget recent-posts-widget">
+                        <h3 class="widget-title">Recent Posts</h3>
+                        <ul class="recent-posts">
+                            <li>
+                                <div class="post-thumbnail">
+                                    <img src="images/tech/hero.avif" alt="Web Design Trends">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="blog-post.html">Web Design Trends That Will Dominate in 2025</a></h4>
+                                    <span class="post-date">May 1, 2025</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-thumbnail">
+                                    <img src="images/tech/SEO.jpg" alt="SEO Strategies">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="blog-post.html">SEO Strategies That Actually Work in 2025</a></h4>
+                                    <span class="post-date">April 25, 2025</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-thumbnail">
+                                    <img src="images/tech/Ecom.jpg" alt="E-commerce Optimization">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="blog-post.html">E-commerce Optimization: Boosting Conversion Rates</a></h4>
+                                    <span class="post-date">April 18, 2025</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget tags-widget">
+                        <h3 class="widget-title">Popular Tags</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">Web Design</a>
+                            <a href="#" class="tag">Development</a>
+                            <a href="#" class="tag">SEO</a>
+                            <a href="#" class="tag">E-commerce</a>
+                            <a href="#" class="tag">Mobile</a>
+                            <a href="#" class="tag">AI</a>
+                            <a href="#" class="tag">Security</a>
+                            <a href="#" class="tag">UI/UX</a>
+                            <a href="#" class="tag">WordPress</a>
+                            <a href="#" class="tag">Responsive</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget newsletter-widget">
+                        <h3 class="widget-title">Subscribe to Our Newsletter</h3>
+                        <p>Get the latest web design and development tips delivered to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to start your project?</h2>
+                <p>Contact us today for a free consultation and quote</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Button -->
+    <div class="chat-widget" id="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-popup" id="chat-popup">
+            <!-- Chat widget content will be loaded dynamically via JavaScript -->
+        </div>
+    </div>
+
+   <!-- Footer Section -->
+   <footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <span class="logo-text">EnnieDevelopers</span>
+                </a>
+                <p>Professional web design and development solutions for businesses of all sizes.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#e-commerce">E-Commerce</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#seo">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Ndirande Market, Behind Post Office, Blantyre, Malawi</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:++265886515165"> (+265) 88 651 5165</a></li>
+                        <li><i class="fas fa-envelope"></i> enniedevelopers@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EnnieDevelopers. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                                   <a href="Terms & pirvancy.html">Privacy Policy</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- CSS for Blog page -->
+    <style>
+        /* Blog layout */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--spacing-xl);
+        }
+        
+        /* Blog posts */
+        .blog-post {
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            margin-bottom: var(--spacing-lg);
+            transition: transform var(--transition-normal);
+        }
+        
+        .blog-post:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .featured-post {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .post-thumbnail {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .featured-post .post-thumbnail {
+            height: 400px;
+        }
+        
+        .post-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-normal);
+        }
+        
+        .blog-post:hover .post-thumbnail img {
+            transform: scale(1.05);
+        }
+        
+        .post-category {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.75rem;
+            font-weight: 600;
+            z-index: 1;
+        }
+        
+        .post-content {
+            padding: var(--spacing-lg);
+        }
+        
+        .post-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.4;
+        }
+        
+        .featured-post .post-title {
+            font-size: 2rem;
+        }
+        
+        .post-title a {
+            color: var(--text-color);
+            transition: color var(--transition-fast);
+        }
+        
+        .post-title a:hover {
+            color: var(--primary-color);
+        }
+        
+        .post-meta {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-light);
+            font-size: 0.875rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+        
+        .post-meta i {
+            margin-right: 5px;
+        }
+        
+        .post-excerpt {
+            color: var(--text-light);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            font-weight: 600;
+            color: var(--primary-color);
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .read-more i {
+            margin-left: 5px;
+            transition: transform var(--transition-fast);
+        }
+        
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: var(--spacing-xl);
+        }
+        
+        .page-numbers {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 5px;
+            font-weight: 600;
+            color: var(--text-color);
+            transition: all var(--transition-fast);
+        }
+        
+        .page-numbers:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+        }
+        
+        .page-numbers.current {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Sidebar */
+        .sidebar-widget {
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .widget-title {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            padding-bottom: var(--spacing-sm);
+        }
+        
+        .widget-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        /* Search Widget */
+        .search-form {
+            display: flex;
+            position: relative;
+        }
+        
+        .search-form input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+            font-size: 1rem;
+            outline: none;
+            transition: border-color var(--transition-fast);
+        }
+        
+        .search-form input:focus {
+            border-color: var(--primary-color);
+        }
+        
+        .search-form button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 50px;
+            background: none;
+            border: none;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+        
+        .search-form button:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Categories Widget */
+        .category-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .category-list li {
+            margin-bottom: var(--spacing-sm);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: var(--spacing-sm);
+        }
+        
+        .category-list li:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .category-list a {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-color);
+            transition: color var(--transition-fast);
+        }
+        
+        .category-list a:hover {
+            color: var(--primary-color);
+        }
+        
+        .category-list span {
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+        
+        /* Recent Posts Widget */
+        .recent-posts {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .recent-posts li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .recent-posts li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .recent-posts .post-thumbnail {
+            width: 80px;
+            height: 80px;
+            border-radius: var(--border-radius-sm);
+            overflow: hidden;
+            margin-right: var(--spacing-md);
+            flex-shrink: 0;
+        }
+        
+        .recent-posts .post-info h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+        
+        .recent-posts .post-info h4 a {
+            color: var(--text-color);
+            transition: color var(--transition-fast);
+        }
+        
+        .recent-posts .post-info h4 a:hover {
+            color: var(--primary-color);
+        }
+        
+        .recent-posts .post-date {
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+        
+        /* Tags Widget */
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: var(--background-light);
+            color: var(--text-light);
+            font-size: 0.75rem;
+            transition: all var(--transition-fast);
+        }
+        
+        .tag:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+        }
+        
+        /* Newsletter Widget */
+        .newsletter-widget p {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-light);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+        
+        .newsletter-form input {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+            font-size: 1rem;
+            outline: none;
+            transition: border-color var(--transition-fast);
+        }
+        
+        .newsletter-form input:focus {
+            border-color: var(--primary-color);
+        }
+        
+        @media (max-width: 991.98px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                margin-top: var(--spacing-lg);
+            }
+            
+            .featured-post .post-thumbnail {
+                height: 300px;
+            }
+            
+            .featured-post .post-title {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
