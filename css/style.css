@@ -851,7 +851,7 @@ color: honeydew;
     width: 40%;
 }
 .hero{
-    background-image: url('/images/tech/mobile.jpg');
+    background-image: url("images/tech/mobile.jpg");
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
